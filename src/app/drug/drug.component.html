@@ -1,0 +1,5 @@
+<p (click) = "isHidden = !isHidden"> {{drug.drugName}} </p>
+
+<div *ngFor = "let claim of drug.claim" [hidden] = isHidden>
+  <p>{{claim.rx}}</p>
+</div>
